@@ -26,7 +26,7 @@ class Solution:
                 result[-(level+1)].append(node.val) # всатвляем цифру в последний уровень
                 que.append((node.left, level+1))
                 que.append((node.right, level+1))
-        return result
+        return len(result)
 
 
 if __name__ == '__main__':
