@@ -4,16 +4,12 @@ from typing import List
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
 
-        result = []
         number = ''
         for i in digits:
             number += str(i)
+        number = [ int(x) for x in str(int(number) + 1)]
 
-        number = int(number) + 1
-        number = str(number)
-        for i in number:
-            result.append(i)
-        return result
+        return number
 
 
 if __name__ == '__main__':
